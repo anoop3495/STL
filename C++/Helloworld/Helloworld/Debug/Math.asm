@@ -60,24 +60,20 @@ __541761B8_xatomic@h DB 01H
 msvcjmc	ENDS
 PUBLIC	?__empty_global_delete@@YAXPAX@Z		; __empty_global_delete
 PUBLIC	?__empty_global_delete@@YAXPAXI@Z		; __empty_global_delete
-PUBLIC	_main
+PUBLIC	?multiply@@YAHHH@Z				; multiply
+PUBLIC	?multiplyandlog@@YAXHH@Z			; multiplyandlog
 PUBLIC	??$endl@DU?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@@Z ; std::endl<char,std::char_traits<char> >
+PUBLIC	_main
 PUBLIC	__JustMyCode_Default
-PUBLIC	??_C@_08EOBDLMOI@Multiply@			; `string'
 EXTRN	__imp_?widen@?$basic_ios@DU?$char_traits@D@std@@@std@@QBEDD@Z:PROC
 EXTRN	__imp_??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@P6AAAV01@AAV01@@Z@Z:PROC
 EXTRN	__imp_??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z:PROC
 EXTRN	__imp_?put@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV12@D@Z:PROC
 EXTRN	__imp_?flush@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV12@XZ:PROC
 EXTRN	__imp_?get@?$basic_istream@DU?$char_traits@D@std@@@std@@QAEHXZ:PROC
-EXTRN	?Log@@YAXPBD@Z:PROC				; Log
 EXTRN	@__CheckForDebuggerJustMyCode@4:PROC
 EXTRN	__imp_?cin@std@@3V?$basic_istream@DU?$char_traits@D@std@@@1@A:BYTE
 EXTRN	__imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A:BYTE
-;	COMDAT ??_C@_08EOBDLMOI@Multiply@
-CONST	SEGMENT
-??_C@_08EOBDLMOI@Multiply@ DB 'Multiply', 00H		; `string'
-CONST	ENDS
 ; Function compile flags: /Odt
 ;	COMDAT __JustMyCode_Default
 _TEXT	SEGMENT
@@ -87,6 +83,40 @@ __JustMyCode_Default PROC				; COMDAT
 	pop	ebp
 	ret	0
 __JustMyCode_Default ENDP
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+;	COMDAT _main
+_TEXT	SEGMENT
+_main	PROC						; COMDAT
+; File D:\C-Projects\C++\Helloworld\Helloworld\Math.cpp
+	mov	ecx, OFFSET __68B3CD10_Math@cpp
+	call	@__CheckForDebuggerJustMyCode@4
+; Line 13
+	mov	ecx, DWORD PTR __imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A
+	push	OFFSET ??$endl@DU?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@@Z ; std::endl<char,std::char_traits<char> >
+	push	6
+	call	DWORD PTR __imp_??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z
+	mov	ecx, eax
+	call	DWORD PTR __imp_??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@P6AAAV01@AAV01@@Z@Z
+	mov	ecx, DWORD PTR __imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A
+	push	OFFSET ??$endl@DU?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@@Z ; std::endl<char,std::char_traits<char> >
+	push	20					; 00000014H
+	call	DWORD PTR __imp_??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z
+	mov	ecx, eax
+	call	DWORD PTR __imp_??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@P6AAAV01@AAV01@@Z@Z
+	mov	ecx, DWORD PTR __imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A
+	push	OFFSET ??$endl@DU?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@@Z ; std::endl<char,std::char_traits<char> >
+	push	42					; 0000002aH
+	call	DWORD PTR __imp_??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z
+	mov	ecx, eax
+	call	DWORD PTR __imp_??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@P6AAAV01@AAV01@@Z@Z
+; Line 21
+	mov	ecx, DWORD PTR __imp_?cin@std@@3V?$basic_istream@DU?$char_traits@D@std@@@1@A
+	call	DWORD PTR __imp_?get@?$basic_istream@DU?$char_traits@D@std@@@std@@QAEHXZ
+; Line 22
+	xor	eax, eax
+	ret	0
+_main	ENDP
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
 ;	COMDAT ??$endl@DU?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@@Z
@@ -120,32 +150,50 @@ __Ostr$ = 8						; size = 4
 ??$endl@DU?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@@Z ENDP ; std::endl<char,std::char_traits<char> >
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
-;	COMDAT _main
+;	COMDAT ?multiplyandlog@@YAXHH@Z
 _TEXT	SEGMENT
-_main	PROC						; COMDAT
+_a$ = 8							; size = 4
+_b$ = 12						; size = 4
+?multiplyandlog@@YAXHH@Z PROC				; multiplyandlog, COMDAT
 ; File D:\C-Projects\C++\Helloworld\Helloworld\Math.cpp
+; Line 10
+	push	ebp
+	mov	ebp, esp
 	mov	ecx, OFFSET __68B3CD10_Math@cpp
 	call	@__CheckForDebuggerJustMyCode@4
 ; Line 6
-	push	OFFSET ??_C@_08EOBDLMOI@Multiply@
-	call	?Log@@YAXPBD@Z				; Log
-; Line 12
+	mov	eax, DWORD PTR _a$[ebp]
+	imul	eax, DWORD PTR _b$[ebp]
+; Line 13
 	mov	ecx, DWORD PTR __imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A
-; Line 6
-	add	esp, 4
-; Line 12
 	push	OFFSET ??$endl@DU?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@@Z ; std::endl<char,std::char_traits<char> >
-	push	40					; 00000028H
+	push	eax
 	call	DWORD PTR __imp_??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z
 	mov	ecx, eax
 	call	DWORD PTR __imp_??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@P6AAAV01@AAV01@@Z@Z
-; Line 13
-	mov	ecx, DWORD PTR __imp_?cin@std@@3V?$basic_istream@DU?$char_traits@D@std@@@1@A
-	call	DWORD PTR __imp_?get@?$basic_istream@DU?$char_traits@D@std@@@std@@QAEHXZ
 ; Line 14
-	xor	eax, eax
+	pop	ebp
 	ret	0
-_main	ENDP
+?multiplyandlog@@YAXHH@Z ENDP				; multiplyandlog
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+;	COMDAT ?multiply@@YAHHH@Z
+_TEXT	SEGMENT
+_a$ = 8							; size = 4
+_b$ = 12						; size = 4
+?multiply@@YAHHH@Z PROC					; multiply, COMDAT
+; File D:\C-Projects\C++\Helloworld\Helloworld\Math.cpp
+; Line 5
+	push	ebp
+	mov	ebp, esp
+	mov	ecx, OFFSET __68B3CD10_Math@cpp
+	call	@__CheckForDebuggerJustMyCode@4
+	mov	eax, DWORD PTR _a$[ebp]
+	imul	eax, DWORD PTR _b$[ebp]
+; Line 7
+	pop	ebp
+	ret	0
+?multiply@@YAHHH@Z ENDP					; multiply
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
 ;	COMDAT ?__empty_global_delete@@YAXPAXI@Z
