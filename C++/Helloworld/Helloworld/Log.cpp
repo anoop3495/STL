@@ -1,13 +1,15 @@
-#include<iostream>
 #include "Log.h"
 
-void Log(const char* message)
+
+int multiply(int a, int b)
 {
-	std::cout << message << std::endl;
+	return a * b;
 }
 
-void InitLog()
+void multiplyandlog(int a, int b)
 {
-	Log("Intialised Log");
+	int result;
+	result = multiply(a, b);
+	std::cout << result << std::endl;
 }
 
