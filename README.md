@@ -14,8 +14,12 @@ Every sub directory has its own Cmake list, you could do the following:
 For eg:
 
 cd DesignPatterns
+
 mkdir build
+
 cd build
+
 cmake ..
+
 make
 
