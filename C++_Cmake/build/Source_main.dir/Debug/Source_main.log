@@ -1,0 +1,4 @@
+﻿  Building Custom Rule D:/STL/C++_Cmake/CMakeLists.txt
+cl : command line warning D9002: ignoring unknown option '-std=c++11'
+  Source_main.cpp
+  Source_main.vcxproj -> D:\STL\C++_Cmake\build\Debug\Source_main.exe
