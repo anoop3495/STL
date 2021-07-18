@@ -139,9 +139,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="IteratorPattern.cpp" />
+    <ClCompile Include="Pattern_source.cpp" />
     <ClCompile Include="Visitor_pattern.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="IteratorPattern.h" />
     <ClInclude Include="Visitor_pattern.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

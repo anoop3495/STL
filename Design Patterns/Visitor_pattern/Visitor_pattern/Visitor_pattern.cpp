@@ -16,8 +16,3 @@ void callPattern1()
     VisitorCaller visitor;
     call.accept(visitor);
 }
-
-int main()
-{
-    return 0;
-}
