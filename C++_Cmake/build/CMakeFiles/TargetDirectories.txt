@@ -1,3 +1,0 @@
-D:/STL/C++_Cmake/build/CMakeFiles/Source_main.dir
-D:/STL/C++_Cmake/build/CMakeFiles/ALL_BUILD.dir
-D:/STL/C++_Cmake/build/CMakeFiles/ZERO_CHECK.dir

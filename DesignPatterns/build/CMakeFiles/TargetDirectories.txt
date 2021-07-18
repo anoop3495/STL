@@ -1,0 +1,3 @@
+D:/STL/DesignPatterns/build/CMakeFiles/Pattern_source.dir
+D:/STL/DesignPatterns/build/CMakeFiles/ALL_BUILD.dir
+D:/STL/DesignPatterns/build/CMakeFiles/ZERO_CHECK.dir
