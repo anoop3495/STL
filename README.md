@@ -19,3 +19,10 @@ For eg:
 4. cmake ..
 5. make
 
+# References
+
+1. https://www.fluentcpp.com/2020/12/18/on-design-patterns-in-cpp/
+2. https://refactoring.guru/design-patterns/behavioral-patterns
+3. https://corecppil.github.io/Meetups/2020-05-26_CoreCpp_Worldwide!/The_SOLID_Principles.pdf
+4. https://www.geeksforgeeks.org/solid-principle-in-programming-understand-with-real-life-examples/
+5. https://sourcemaking.com/design_patterns
