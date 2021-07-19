@@ -1,57 +1,29 @@
-#include <iostream>
-#include<string>
+#include "DependencyPrin.h"
 
-class Employee
+std::string const Employee::getter()
 {
-private:
-	std::string name;
-public:
-	virtual void setter(std::string name1)
-	{
-		name = name1;
-	}
-	std::string const getter()
-	{
-		return this->name;
-	}
-	virtual void print() = 0;
-};
+  return this->name;
+}
 
-class Developer: public Employee
+void Developer::print()
 {
-public:
-	void print()
-	{	
-		Employee::setter("Anoop");
-		std::cout << "DeveloperAdded    " <<Employee::getter() <<std::endl;
-	}
-};
+  Employee::setter("Anoop");
+  std::cout << "Developer   " << Employee::getter() << std::endl;
+}
 
-class Designer : public Employee
+void Designer::print()
 {
-public:
-	void print()
-	{
-		Employee::setter("Alex");
-		std::cout << "Designer                 " << Employee::getter() << std::endl;
-	}
-};
+  Employee::setter("Alex");
+  std::cout << "Designer  " << Employee::getter() << std::endl;
+}
 
-class Manager
+void Manager::AllEmployees()
 {
-Developer Dev;
-Designer Deg;
-public:
-	void AllEmployees()
-	{
-		Dev.print();
-		Deg.print();
-	}
-};
-
-int main()
+  Manager::Dev.print();
+  Manager::Deg.print();
+}
+void callDependency()
 {
 	Manager m;
 	m.AllEmployees();
-	std::cin.get();
 }
