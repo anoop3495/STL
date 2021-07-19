@@ -13,9 +13,9 @@ Every sub directory has its own Cmake list, you could do the following:
 
 For eg:
 
-cd DesignPatterns
-mkdir build
-cd build
-cmake ..
-make
+1. cd DesignPatterns
+2. mkdir build
+3. cd build
+4. cmake ..
+5. make
 
