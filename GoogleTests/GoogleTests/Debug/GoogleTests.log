@@ -1,0 +1,4 @@
+﻿  ExampleTest.cpp
+  test.cpp
+D:\STL\GoogleTests\GoogleTests\test.cpp(69,2): warning C4002: too many arguments for function-like macro invocation 'EXPECT_TRUE'
+  GoogleTests.vcxproj -> D:\STL\GoogleTests\Debug\GoogleTests.exe

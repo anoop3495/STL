@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GtaTestDurations xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Executable>D:\STL\GoogleTests\Debug\GoogleTests.exe</Executable>
+  <TestDurations>
+    <TestDuration Test="TestCaseName.TestName" Duration="1" />
+    <TestDuration Test="TestCaseName.TestName_1" Duration="1" />
+    <TestDuration Test="TestFixture.testFixture" Duration="1" />
+    <TestDuration Test="TestFixture.testFibonacci" Duration="1" />
+    <TestDuration Test="integer_value/ParameterizedFixture.integers/0" Duration="1" />
+    <TestDuration Test="integer_value/ParameterizedFixture.integers/1" Duration="1" />
+    <TestDuration Test="integer_value/ParameterizedFixture.integers/2" Duration="1" />
+    <TestDuration Test="integer_value/ParameterizedFixture.integers/3" Duration="1" />
+    <TestDuration Test="integer_value/ParameterizedFixture.fibonacciValues/0" Duration="1" />
+    <TestDuration Test="integer_value/ParameterizedFixture.fibonacciValues/1" Duration="1" />
+    <TestDuration Test="integer_value/ParameterizedFixture.fibonacciValues/2" Duration="1" />
+    <TestDuration Test="integer_value/ParameterizedFixture.fibonacciValues/3" Duration="1" />
+    <TestDuration Test="fibonacciValues/ParameterizedFixture.integers/0" Duration="1" />
+    <TestDuration Test="fibonacciValues/ParameterizedFixture.integers/1" Duration="1" />
+    <TestDuration Test="fibonacciValues/ParameterizedFixture.integers/2" Duration="1" />
+    <TestDuration Test="fibonacciValues/ParameterizedFixture.fibonacciValues/0" Duration="1" />
+    <TestDuration Test="fibonacciValues/ParameterizedFixture.fibonacciValues/1" Duration="1" />
+    <TestDuration Test="fibonacciValues/ParameterizedFixture.fibonacciValues/2" Duration="1" />
+  </TestDurations>
+</GtaTestDurations>
