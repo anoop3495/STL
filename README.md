@@ -1,6 +1,6 @@
 # C++
 
-The thought behind of this repository is try some C++ concepts which are used on regular basics in Automotive
+The thought behind of this repository is try some C++ concepts which are used on regular basis in Automotive
 Embedded function development, Design patterns and SOLID principles of coding.
 
 In order to fullfil this purpose there are three sub directories
@@ -8,16 +8,16 @@ In order to fullfil this purpose there are three sub directories
 1. C++
 2. Design Patterns
 3. Solid Principles
+4. Google unit tests
 
-Every sub directory has its own Cmake list, you could do the following:
+Every sub directory has its own Cmake list and a make CMakeList is present to execute all subdirectories. 
+In order to build the repository, you could do the following:
 
 For eg:
-
-1. cd DesignPatterns
-2. mkdir build
-3. cd build
-4. cmake ..
-5. make
+1. mkdir build
+2. cd build
+3. cmake ..
+4. make
 
 # References
 
@@ -26,3 +26,5 @@ For eg:
 3. https://corecppil.github.io/Meetups/2020-05-26_CoreCpp_Worldwide!/The_SOLID_Principles.pdf
 4. https://www.geeksforgeeks.org/solid-principle-in-programming-understand-with-real-life-examples/
 5. https://sourcemaking.com/design_patterns
+6. https://github.com/CppCon
+7. https://github.com/CppCon/CppCon2020
