@@ -1,7 +1,7 @@
 # C++
 
 The thought behind of this repository is try some C++ concepts which are used on regular basis in Automotive
-Embedded function development, Design patterns and SOLID principles of coding.
+Embedded function development, Design patterns, google unit tests and SOLID principles of coding.
 
 In order to fullfil this purpose there are three sub directories
 
