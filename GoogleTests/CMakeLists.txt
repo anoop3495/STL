@@ -3,8 +3,25 @@ project(GoogleTests)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
-set(SOURCE_FILES 
+enable_testing()
+find_package(GTest)
+find_package(Threads)
+
+
+
+add_executable(GoogleTests
 	ExampleTest.cpp
 	test.cpp
 	ExampleTest.h)
-add_executable(test.cpp ${SOURCE_FILES})
+
+target_include_directories(GoogleTests
+  PUBLIC ${GTEST_INCLUDE_DIRS}
+)
+
+target_link_libraries(GoogleTests
+  ${GTEST_BOTH_LIBRARIES}
+  Threads::Threads
+)
+
+
+add_test(GoogleTests GoogleTests)
