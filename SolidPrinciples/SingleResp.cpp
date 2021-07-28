@@ -1,32 +1,26 @@
 #include "SingleResp.h"
 
-void Geometry::add(const int& element)
+int AreaRec::calculate()
 {
-  array.emplace_back(element);
-}
-std::vector<int> Geometry::getEntries() const
-{
-  return this->array;
-}
-int Geometry::getValue() const
-{
-  return this->a;
+  return (a*b);
 }
 
-void SRP::print(const Geometry& geo)
+float PreRec::calculate()
 {
-  for (const auto& entrie : geo.getEntries())
-  {
-    std::cout << entrie << std::endl;
-  }
+  return 2 * (a + b);
+}
+
+template<typename T> void print(T ans)
+{
+  std::cout << ans;
 }
 void callSRP()
 {
-    Geometry geo(5);
-    geo.add(6);
-    geo.add(7);
-    geo.add(8);
-    geo.add(9);
-    geo.add(10);
-    SRP::print(geo);
+  AreaRec mathArea(4, 5);
+  int total = mathArea.calculate();
+  print(total);
+
+  PreRec mathPri(7,8);
+  int totalPri = mathPri.calculate();
+  print(totalPri);
 }

@@ -4,22 +4,29 @@
 #include <iostream>
 #include <vector>
 
-class Geometry
+class AreaRec
 {
 private:
   int a;
-  std::vector<int> array;
+  int b;
 public:
-  Geometry(const int& b) :a(b) {}
-  void add(const int& element);
-  std::vector<int> getEntries() const;
-  int getValue() const;
+  AreaRec(const int& c, const int& d) : a(c), b(d) {}
+  int calculate();
+
 };
 
-class SRP
+class PreRec
 {
+private:
+  float a;
+  float b;
 public:
-  static void print(const Geometry& geo);
+  PreRec(const float& c, const float& d) : a(c), b(d) {}
+  float calculate();
+
 };
+
+template<typename T> void print(T ans);
+
 void callSRP();
 #endif // !SINGLERESP_HPP
