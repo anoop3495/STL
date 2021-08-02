@@ -5,58 +5,38 @@
 #include <vector>
 #include <string>
 
-enum class Size { ONE, TWO, THREE };
+enum Shape { SQUARE, CIRCLE};
 
-class Dim
+class ShapeGeo
 {
 private:
-  Size size1;
-  std::string name;
+  Shape shapeObje1;
 public:
-  Dim(Size size, std::string name1) :size1(size), name(name1) {}
-  const Size& getSize() const { return this->size1; }
-  void print() { std::cout << " Type =" << this->name << std::endl; }
-
+  ShapeGeo(Shape s) : shapeObje1(s) {};
+  virtual const Shape& getSize() const { return this->shapeObje1; }
+  virtual void calculateArea() = 0;
 };
 
-template <typename T>
-class SizeSpec {
-public:
-  virtual bool valid(T* item) = 0;
-};
-
-class SizeSpecShape : public SizeSpec<Dim>
+class SqaureAreaSpecShape : public ShapeGeo
 {
 private:
-  Size size2;
+  int side;
 
 public:
-  explicit SizeSpecShape(const Size size) :size2(size) {}
-  bool valid(Dim* dim) override { return dim->getSize() == this->size2; }
+  explicit SqaureAreaSpecShape(int s) :ShapeGeo(SQUARE), side(s) {}
+  int getter() { return this->side; }
+  virtual void calculateArea();
 };
 
-template <typename T>
-class Filter
+class CircleAreaSpecShape : public ShapeGeo
 {
-public:
-  virtual std::vector<T*> filter(std::vector<T*> items, SizeSpec<T>& spec) = 0;
-};
+private:
+  int radius;
 
-class DimFil : public Filter<Dim>
-{
 public:
-  std::vector<Dim*> filter(std::vector<Dim*> items, SizeSpec<Dim>& spec) override
-  {
-    std::vector<Dim*> results;
-    for (const auto& item : items)
-    {
-      if (spec.valid(item))
-      {
-        results.emplace_back(item);
-      }
-    }
-    return results;
-  }
+  explicit CircleAreaSpecShape(int a) :ShapeGeo(CIRCLE), radius(a) {}
+  int getter() { return this->radius; }
+  virtual void calculateArea();
 };
 void openclosed();
 

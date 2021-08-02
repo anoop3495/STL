@@ -1,20 +1,20 @@
 #include"OpenClosed.h"
+void CircleAreaSpecShape::calculateArea()
+{
+  std::cout<<ShapeGeo::getSize()<<(CircleAreaSpecShape::getter()* 3.14);
+}
 
+void SqaureAreaSpecShape::calculateArea()
+{
+  std::cout << ShapeGeo::getSize() << SqaureAreaSpecShape::getter() *SqaureAreaSpecShape::getter();
+}
 void openclosed()
 {
+  SqaureAreaSpecShape s(4);
+  s.calculateArea();
 
-	Dim Rect(Size::ONE, "Rectangle");
-	Dim Squ(Size::TWO, "Square");
-	Dim Tri(Size::THREE, "Triangle");
+  CircleAreaSpecShape c(3);
+  c.calculateArea();
 
-	std::vector<Dim*> Shapes = { &Rect, &Squ, &Tri};
-	DimFil dimfil;
-	SizeSpecShape large(Size::THREE);
-	auto Biggest = dimfil.filter(Shapes, large);
-	std::cout << "Large product : " << std::endl;
-	for (const auto& big : Biggest)
-	{
-		big->print();
-	}
 
 }
