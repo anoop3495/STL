@@ -3,21 +3,21 @@
 The thought behind this repository is try some C++ concepts  Design patterns, google unit tests and SOLID principles of coding 
 which are used on regular basis for C++ embedded function development.
 
-In order to fullfil this purpose there are four sub directories
+##  In order to fullfil this purpose there are four sub directories
 
-1. C++
-2. Design Patterns
-3. Solid Principles
-4. Google unit tests
+    1. C++
+    2. Design Patterns
+    3. Solid Principles
+    4. Google unit tests
 
 Every sub directory has its own Cmake list and a common CMakeList is present to execute all subdirectories. 
 In order to build the repository, you could do the following:
 
-For eg:
-1. mkdir build
-2. cd build
-3. cmake ..
-4. make
+##  For eg:
+    1. mkdir build
+    2. cd build
+    3. cmake ..
+    4. make
 
 # References
 
