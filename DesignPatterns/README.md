@@ -6,7 +6,9 @@ automotive development.
 ## Benifits of design pattern:
 
   **1. Tried and tested solution**
+  
   **2. It gives a common language across the team**
+  
   **3. It makes the software design more mod**
 
 ## Whats is vistor:
