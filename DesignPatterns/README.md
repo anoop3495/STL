@@ -31,7 +31,7 @@ Iterator is a behavioral design pattern that lets su traverse elements of a coll
 
 ## Why should I  learn Iterator pattern:
 	1. It works on different data  structure
-  2. It works on open / closed principle
+  	2. It works on open / closed principle
 
   
 # Adapter Design Pattern:
@@ -44,7 +44,7 @@ Iterator is a behavioral design pattern that lets su traverse elements of a coll
 
 ## Disadvantages:
 
-  1.We need to introduce new interface, object etc. In a simple program it work, but in a complex program it might be difficult.
+  	1.We need to introduce new interface, object etc. In a simple program it work, but in a complex program it might be difficult.
 
 
 
