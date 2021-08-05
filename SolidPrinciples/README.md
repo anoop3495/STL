@@ -4,7 +4,12 @@ In the world of software development, The attribute is to write a clean, resusab
 oriented programming and SOLID princilpes of coding. SOLID principles stands as follows:
 
   **S - Single Responsiblity Principle**
-  **O - Opened/Closed Principle
+  
+  
+  **O - Opened/Closed Principle**
+  
   **L- Liskov’s Substitution Principle **
+  
   **I - Interface segregation Principle**
+  
   **D - Dependency Inversion Principle**
