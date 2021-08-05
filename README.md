@@ -1,16 +1,16 @@
 # C++
 
-The thought behind of this repository is try some C++ concepts which are used on regular basis in Automotive
-Embedded function development, Design patterns, google unit tests and SOLID principles of coding.
+The thought behind this repository is try some C++ concepts  Design patterns, google unit tests and SOLID principles of coding 
+which are used on regular basis for C++ embedded function development.
 
-In order to fullfil this purpose there are three sub directories
+In order to fullfil this purpose there are four sub directories
 
 1. C++
 2. Design Patterns
 3. Solid Principles
 4. Google unit tests
 
-Every sub directory has its own Cmake list and a make CMakeList is present to execute all subdirectories. 
+Every sub directory has its own Cmake list and a common CMakeList is present to execute all subdirectories. 
 In order to build the repository, you could do the following:
 
 For eg:
