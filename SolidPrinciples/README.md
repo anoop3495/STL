@@ -45,6 +45,6 @@ The high level block of functionality should not depend on low level block funct
 via the Abstraction Interface so that the changes modified in high level and low level functionalities does not affect each other.
 
 For Eg:
-1.DIP principle could be used while implementing the concept of Abstraction.
+1. DIP principle could be used while implementing the concept of Abstraction.
 
 
