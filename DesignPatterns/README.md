@@ -42,7 +42,7 @@ Iterator is a behavioral design pattern that lets su traverse elements of a coll
   3. It creates an interface, compatible with existing objects
   4. Using the interface , the existing object can call adapter methods
 
-# Disadvantages:
+**Disadvantages:**
   1.We need to introduce new interface, object etc. In a simple program it work, but in a complex program it might be difficult.
 
 
