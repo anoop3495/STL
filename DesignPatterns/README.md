@@ -3,23 +3,21 @@
 Design patterns is a blueprint to solve common software design problems. Some of the design patterns are widely used in 
 automotive development.
 
-## Benifits of design pattern:
+**Benifits of design pattern**
 
-  **1. Tried and tested solution**
-  
-  **2. It gives a common language across the team**
-  
-  **3. It makes the software design more mod**
+  1. Tried and tested solution.
+  2. It gives a common language across the team.
+  3. It makes the software design more modular.
 
 ## Whats is vistor:
 
 It is a behavioral pattern which lets us to operate Algorithm / feature independent of the instance being passed
 
-## Pre-Condtions:
+**Pre-Condtions:**
 
-  **1. A common visitor class
-    2. A method that accepts instance of different class
-    3. Method has same functionality irrespective of different class instances**
+   1. A common visitor class.
+   2. A method that accepts instance of different class.
+   3. Method has same functionality irrespective of different class instances.
 	
 ## Why should I  learn visitor pattern:
 
