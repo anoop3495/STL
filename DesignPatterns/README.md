@@ -25,7 +25,7 @@ It is a behavioral pattern which lets us to operate Algorithm / feature independ
    2. It gives a clear solution to feature and you can see how your end results look
    3. We can introduce new methods in visitor which can be used across different classes
   
-# Iterator design pattern:
+## Iterator design pattern:
 
 Iterator is a behavioral design pattern that lets su traverse elements of a collection without exposing its underlying representation (list, stack, tree, etc.).
 
@@ -34,7 +34,7 @@ Iterator is a behavioral design pattern that lets su traverse elements of a coll
   2. It works on open / closed principle
 
   
-# Adapter Design Pattern:
+## Adapter Design Pattern:
 
 **Why should I  learn?**
   1. It is a type of structural design pattern
